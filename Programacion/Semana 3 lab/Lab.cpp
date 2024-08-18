@@ -1,3 +1,35 @@
+/*
+Instrucciones para el Programa en C++ - Resolución Individual
+
+Resuelve de manera individual el siguiente programa en C++. Asegúrate de documentar el código adecuadamente utilizando comentarios de múltiples líneas,
+empleando los símbolos especiales . Además, proporciona los datos necesarios según lo explicado en clase.
+
+Menú Interactivo: Crea un menú interactivo utilizando la estructura switch() para permitir al usuario seleccionar entre las siguientes opciones:
+1, 2 o salir del programa.
+
+Presentación del Menú: El menú debe mostrarse de la siguiente manera:
+
+BIENVENIDO A SU PROGRAMA EN C++
+
+Opción 1: Ejercicio Almacén
+Opción 2: Ejercicio Cálculo de Notas
+Opción 3: Salir del Programa
+Detalles de las Opciones:
+
+Ejercicio Almacén:
+
+Un almacén ofrece un descuento del 15% si el total de la compra supera los $150,000 y un descuento del 5% si la compra es inferior a $50,000. 
+Desarrolla un programa en C++ que calcule el monto total que el cliente pagará, incluyendo el respectivo descuento. Al finalizar,
+muestra los resultados para esta opción.
+Ejercicio Cálculo de Notas:
+
+Un alumno desea conocer su calificación en el primer corte del curso de Programación. La calificación se compone de:
+50% del promedio de talleres.
+30% del examen parcial.
+20% del quiz. El programa en C++ debe imprimir la nota definitiva, indicar si el alumno aprueba o reprueba, y en caso de reprobar, 
+mostrar cuánto le falta para aprobar.
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -6,7 +38,7 @@ int main(){
     int opcion;
      do{
          //Mostrar Menu
-         cout <<"Bienvenido a su programa en c++ \n\n";
+         cout <<"\n\nBIENVENIDO A SU PROGRAMA EN C++ \n\n";
          cout <<"Opción 1: Ejercicio Almacén\n";
          cout <<"Opción 2: Ejercicio Cálculo de Notas\n";
          cout <<"Opción 3:Salir del programa\n\n";
@@ -47,7 +79,7 @@ int main(){
                  cout<<"La nota final es de: "<<notaFinal<<endl;
                  
                  if (notaFinal>3.0){
-                     cout <<"El alunmo ha aprobado"<<endl;
+                     cout <<"El alumno ha aprobado"<<endl;
                  }else{
                      cout<< "El alumno ha reprobado "<<endl;
                      cout<<"Necesita "<< 3.0 - notaFinal <<" puntos para aprobar."<<endl;
